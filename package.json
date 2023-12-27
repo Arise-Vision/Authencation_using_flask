@@ -1,0 +1,20 @@
+{
+  "name": "new-snippets",
+  "displayName": "new snippets",
+  "description": "css-snippets",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/react-nextjs.json"
+      }
+    ]
+  }
+}

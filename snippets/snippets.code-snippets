@@ -1,0 +1,66 @@
+{
+  "React Component": {
+    "scope": "javascript,typescript",
+    "prefix": ["rc", "rcomponent"],
+    "body": [
+      "import React from 'react';",
+      "",
+      "const ${1:ComponentName} = () => {",
+      "  return (",
+      "    <div>",
+      "      ${2:Content}",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:ComponentName};"
+    ],
+    "description": "Create a basic React component for Next.js"
+  },
+  "React Component with Props": {
+    "scope": "javascript,typescript",
+    "prefix": ["rcp", "rcomponentprops"],
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface ${1:ComponentName}Props {",
+      "  ${2:propName}: ${3:string};",
+      "}",
+      "",
+      "const ${1:ComponentName}: React.FC<${1:ComponentName}Props> = ({ ${2:propName} }) => {",
+      "  return (",
+      "    <div>",
+      "      ${4:Content}",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:ComponentName};"
+    ],
+    "description": "Create a React component with props for Next.js"
+  },
+  "React Component with Props and State": {
+    "scope": "javascript,typescript",
+    "prefix": ["rcps", "rcomponentpropsstate"],
+    "body": [
+      "import React, { useState } from 'react';",
+      "",
+      "interface ${1:ComponentName}Props {",
+      "  ${2:propName}: ${3:string};",
+      "}",
+      "",
+      "const ${1:ComponentName}: React.FC<${1:ComponentName}Props> = ({ ${2:propName} }) => {",
+      "  const [${5:stateName}, set${5:StateName}] = useState<${6:string}>(${7:initialState});",
+      "",
+      "  return (",
+      "    <div>",
+      "      ${4:Content}",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:ComponentName};"
+    ],
+    "description": "Create a React component with props and state for Next.js"
+  },
+}
